@@ -36,7 +36,7 @@ const ThemeToggleButton = () => {
 
     return (
         <button onclick={handleThemeSwitch}>
-            {theme() === "dark" ? <HiSolidMoon class="w-6 h-6 btn block-btn"/> : <HiSolidSun class="w-6 h-6 btn block-btn" />}
+            {theme() === "dark" ? <HiSolidMoon class="w-6 h-6"/> : <HiSolidSun class="w-6 h-6" />}
         </button>
     );
 };
