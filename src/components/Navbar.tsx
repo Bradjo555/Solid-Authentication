@@ -33,10 +33,10 @@ const Navbar = () => {
 	}
     return(
 		<nav class="flex gap-5 justify-center mb-32 mt-8">
-			<A class="hover:bg-elevation-1 p-2 rounded transition-all" href="/">Home</A>
-			<A class="hover:bg-elevation-1 p-2 rounded transition-all"  href="/register">Register</A>
-			<A class="hover:bg-elevation-1 p-2 rounded transition-all"  href="/login">Login</A>
-			<A class="hover:bg-elevation-1 p-2 rounded transition-all"  href="/posts">Posts</A>
+			<A class="hover:bg-elevation-1 hover:text-light p-2 rounded transition-all" href="/">Home</A>
+			<A class="hover:bg-elevation-1 hover:text-light p-2 rounded transition-all"  href="/register">Register</A>
+			<A class="hover:bg-elevation-1 hover:text-light p-2 rounded transition-all"  href="/login">Login</A>
+			<A class="hover:bg-elevation-1 hover:text-light p-2 rounded transition-all"  href="/posts">Posts</A>
 			<Show when={isLoggedIn()}><button onclick={handleSignOut}>Log out</button></Show>
 			<ThemeToggleButton />
 		</nav>
