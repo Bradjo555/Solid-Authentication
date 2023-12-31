@@ -46,7 +46,7 @@ const Register = () => {
                 <label class="block" for="email">Email</label>
                 <input 
                 oninput={(event) => setEmail(event.target.value)}  
-                class="border rounded-md p-3 w-full text-dark bg-transparent border-elevation-1"
+                class="border rounded-md p-3 w-full text-dark bg-transparent dark:text-light border-elevation-1"
                 id="email" placeholder="Email" 
                 type="email" />
             </div>
@@ -54,7 +54,7 @@ const Register = () => {
                 <label class="block" for="password">Password</label>
                 <input 
                 oninput={(event) => setPassword(event.target.value)}
-                class="border rounded-md p-3 w-full text-dark bg-transparent border-elevation-1"
+                class="border rounded-md p-3 w-full text-dark bg-transparent dark:text-light border-elevation-1"
                 id="password" 
                 placeholder="Password" 
                 type="password" />
