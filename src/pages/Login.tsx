@@ -2,7 +2,7 @@ import { useNavigate } from "@solidjs/router";
 import { AiOutlineGoogle } from "solid-icons/ai";
 import { Show, createSignal } from "solid-js";
 import {GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup} from "firebase/auth"
-import { auth } from "../firebase/config";
+import { auth } from "../../config";
 
 const Login = () => {
     const [email, setEmail]       = createSignal<string>("");

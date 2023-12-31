@@ -1,7 +1,7 @@
 import { Show, type Component, createSignal, onMount } from "solid-js"
 import { A } from "@solidjs/router";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../firebase/config";
+import { auth } from "../../config";
 
 const Home: Component = () => {
     const [isLoggedIn, setIsLoggedIn] = createSignal<boolean>(false);
