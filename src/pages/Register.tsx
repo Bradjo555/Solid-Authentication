@@ -1,5 +1,5 @@
 import { createSignal } from "solid-js"
-import { auth } from "../../config";
+import { auth } from "../firebase/config";
 import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { AiOutlineGoogle } from 'solid-icons/ai'
 import { useNavigate } from "@solidjs/router";

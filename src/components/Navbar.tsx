@@ -2,7 +2,7 @@ import { A, useNavigate } from "@solidjs/router"
 import ThemeToggleButton from "./ThemeToggleButton"
 import { Show, createSignal, onMount } from "solid-js";
 import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "../../config";
+import { auth } from "../firebase/config";
 import { AiFillGithub } from 'solid-icons/ai'
 
 const Navbar = () => {

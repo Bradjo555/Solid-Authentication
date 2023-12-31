@@ -1,6 +1,6 @@
 import { Route, Routes } from "@solidjs/router";
 import {createSignal, type Component, onMount } from "solid-js";
-import { auth } from "../config";
+import { auth } from "./firebase/config";
 
 import Home from "./pages/Home";
 import Register from "./pages/Register";
