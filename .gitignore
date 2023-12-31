@@ -1,8 +1,4 @@
 node_modules
 dist
 .env
-firebase
-src/firebase/
-src/firebase
-config.ts
-config
+src/firebase/config.ts
