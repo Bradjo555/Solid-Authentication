@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-Lexend bg-background-light dark:bg-background-dark transition-all duration-500 text-dark dark:text-light
+    }
+}
