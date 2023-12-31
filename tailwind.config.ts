@@ -17,6 +17,8 @@ const config: Config = {
         "dark"  : "#141414",
         "background-dark"  : "#151515",
         "background-light" : "#FBFBFF",
+        "elevation-1"      : "#1D2624",
+        "elevation-2"      : "#2B312F",
       }
       },
   },

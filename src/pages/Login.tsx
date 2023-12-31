@@ -49,13 +49,13 @@ const Login = () => {
     }
 
     return (
-        <form class="flex flex-col gap-5 border w-96 mx-auto p-5">
+        <form class="flex flex-col gap-5 border border-elevation-1 w-96 mx-auto p-5">
             <h1 class="text-center font-bold text-xl">Sign in to an Account</h1>
             <div>
                 <label class="block" for="email">Email</label>
                 <input 
                 oninput={(event) => setEmail(event.target.value)}  
-                class="border rounded-md p-3 w-full text-dark" 
+                class="border rounded-md p-3 w-full text-dark bg-transparent border-elevation-1" 
                 id="email" placeholder="Email" 
                 type="email" />
             </div>
@@ -63,14 +63,14 @@ const Login = () => {
                 <label class="block" for="password">Password</label>
                 <input 
                 oninput={(event) => setPassword(event.target.value)}
-                class="border rounded-md p-3 w-full text-dark" 
+                class="border rounded-md p-3 w-full text-dark bg-transparent border-elevation-1" 
                 id="password" 
                 placeholder="Password" 
                 type="password" />
             </div>
             <Show when={errMsg()}><p class="text-red-500">{errMsg().toString()}</p></Show>
-            <button class="bg-[#E61046] px-5 py-3 font-bold rounded-md text-light" onclick={signIn}>Sign in</button>
-            <button class="bg-[#7805CD] px-5 py-3 font-bold rounded-md text-light flex items-center justify-center gap-3" onclick={signInWithGoogle}>
+            <button class="bg-[#E61046] hover:opacity-80 transition-all  active:scale-95 px-5 py-3 font-bold rounded-md text-light" onclick={signIn}>Sign in</button>
+            <button class="bg-[#7805CD] hover:opacity-80 transition-all  active:scale-95 px-5 py-3 font-bold rounded-md text-light flex items-center justify-center gap-3" onclick={signInWithGoogle}>
                 <AiOutlineGoogle class="w-6 h-6"/>Sign in with google</button>
         </form>
     )
